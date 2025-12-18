@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN apt-get update && \
     apt-get install -y build-essential libgmp-dev libssl-dev libmpfr-dev python3-dev \
-    git wget m4 flex bison libgl1-mesa-glx
+    git wget m4 flex bison libgl1
 
 RUN wget https://crypto.stanford.edu/pbc/files/pbc-0.5.14.tar.gz && \
     tar -xvzf pbc-0.5.14.tar.gz && \
